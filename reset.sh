@@ -1,6 +1,11 @@
 #!/bin/bash
+
+# 再インストール時に昔の iginiton file を片付けて再作成してからインストールを開始するシェル
+# installdir というディレクトリが、OpenShift インストールディレクトリである前提。このディレクトリを全消しする所からはじまる。
+# デフォルトの 3 node インストール設定を変更して、Worker node 付きのインストールファイルに自動で書き替える。
 # Reset baremetal install process. Replace with new install files
 # All install files will be copied to nginx default directry /usr/share/nginx/html
+
 echo "===== Start 1st half step ======"
 echo "rm installdir"
 rm -rf installdir/
