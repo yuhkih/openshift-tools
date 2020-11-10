@@ -1,5 +1,6 @@
 #!/bin/bash
 # Reset baremetal install process. Replace with new install files
+# All install files will be copied to nginx default directry /usr/share/nginx/html
 echo "===== Start 1st half step ======"
 echo "rm installdir"
 rm -rf installdir/
