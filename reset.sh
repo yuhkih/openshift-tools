@@ -23,9 +23,4 @@ echo "create ignition file"
 echo "copy ignition files to ngins/html"
 \cp -f ./installdir/*.ign /usr/share/nginx/html/
 ls -ltr /usr/share/nginx/html/ | grep .ign
-echo "===== start install script ====="
-date
- ./openshift-install --dir=installdir wait-for bootstrap-complete --log-level=debug
-echo "exit"
-exit 
 
