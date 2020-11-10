@@ -1,4 +1,5 @@
 #!/bin/bash
+# Reset baremetal install process. Replace with new install files
 echo "===== Start 1st half step ======"
 echo "rm installdir"
 rm -rf installdir/
